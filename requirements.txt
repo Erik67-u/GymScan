@@ -1,0 +1,10 @@
+streamlit
+torch
+torchvision
+transformers
+pillow
+numpy
+sentencepiece
+timm
+accelerate
+opencv-python-headless
