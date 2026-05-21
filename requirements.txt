@@ -6,3 +6,5 @@ pillow
 numpy
 sentencepiece
 timm
+accelerate
+opencv-python-headless
