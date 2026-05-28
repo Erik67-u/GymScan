@@ -71,7 +71,7 @@ def detect_objects(image):
     results = processor.post_process_grounded_object_detection(
         outputs=outputs,
         target_sizes=target_sizes,
-        threshold=0.15
+        threshold=0.25
     )
 
     detected = []
