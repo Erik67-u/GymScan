@@ -13,3 +13,4 @@ def detect_equipment(image):
     )
 
     return final_equipment
+
