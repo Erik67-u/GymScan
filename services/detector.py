@@ -1,16 +1,41 @@
-from models.clip_model import classify_equipment
-from models.owlvit_model import detect_objects
+from models.clip_model import (
+    classify_equipment
+)
+
+from models.owlvit_model import (
+    detect_objects
+)
+
+from utils.equipment_mapper import (
+    normalize_equipment
+)
 
 
 def detect_equipment(image):
 
-    owl_results = detect_objects(image)
+    # OWL-ViT Detection
+    owl_results = detect_objects(
+        image
+    )
 
-    clip_results = classify_equipment(image)
+    # CLIP Classification
+    clip_results = classify_equipment(
+        image
+    )
 
-    final_equipment = list(
-        set(owl_results + clip_results)
+    # Combine both models
+    combined_results = list(
+        set(
+            owl_results +
+            clip_results
+        )
+    )
+
+    # Normalize names
+    final_equipment = (
+        normalize_equipment(
+            combined_results
+        )
     )
 
     return final_equipment
-
