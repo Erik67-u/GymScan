@@ -52,7 +52,7 @@ def classify_equipment(image):
     logits = outputs.logits_per_image
     probs = logits.softmax(dim=1)
 
-    confidence_threshold = 0.15
+    confidence_threshold = 0.25
 
     detected = []
 
