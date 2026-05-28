@@ -14,14 +14,27 @@ processor = CLIPProcessor.from_pretrained(
 )
 
 equipment_labels = [
-    "dumbbell",
+     "dumbbell",
+    "adjustable dumbbell",
     "barbell",
     "bench",
+    "incline bench",
+    "flat bench",
     "weight plate",
     "cable machine",
-    "kettlebell",
+    "lat pulldown machine",
     "smith machine",
-    "pull up bar"
+    "kettlebell",
+    "leg press machine",
+    "squat rack",
+    "power rack",
+    "pull up bar",
+    "resistance bands",
+    "rowing machine",
+    "exercise bike",
+    "treadmill",
+    "gym machine",
+    "bench press station"
 ]
 
 
