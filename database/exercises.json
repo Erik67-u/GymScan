@@ -7,10 +7,118 @@
       "description": "Lift dumbbells upward toward shoulders."
     },
     {
+      "name": "Hammer Curl",
+      "muscle": "Biceps",
+      "difficulty": "Beginner",
+      "description": "Curl dumbbells with neutral grip."
+    },
+    {
+      "name": "Concentration Curl",
+      "muscle": "Biceps",
+      "difficulty": "Intermediate",
+      "description": "Curl seated with elbow against thigh."
+    },
+    {
       "name": "Shoulder Press",
       "muscle": "Shoulders",
       "difficulty": "Intermediate",
       "description": "Press dumbbells overhead."
+    },
+    {
+      "name": "Arnold Press",
+      "muscle": "Shoulders",
+      "difficulty": "Intermediate",
+      "description": "Rotate dumbbells while pressing upward."
+    },
+    {
+      "name": "Lateral Raise",
+      "muscle": "Shoulders",
+      "difficulty": "Beginner",
+      "description": "Raise dumbbells sideways."
+    },
+    {
+      "name": "Front Raise",
+      "muscle": "Shoulders",
+      "difficulty": "Beginner",
+      "description": "Raise dumbbells in front of body."
+    },
+    {
+      "name": "Dumbbell Bench Press",
+      "muscle": "Chest",
+      "difficulty": "Intermediate",
+      "description": "Press dumbbells upward while lying down."
+    },
+    {
+      "name": "Incline Dumbbell Press",
+      "muscle": "Chest",
+      "difficulty": "Intermediate",
+      "description": "Press dumbbells on incline bench."
+    },
+    {
+      "name": "Dumbbell Fly",
+      "muscle": "Chest",
+      "difficulty": "Intermediate",
+      "description": "Open arms wide and bring together."
+    },
+    {
+      "name": "Bent Over Row",
+      "muscle": "Back",
+      "difficulty": "Intermediate",
+      "description": "Pull dumbbells toward torso."
+    },
+    {
+      "name": "Single Arm Row",
+      "muscle": "Back",
+      "difficulty": "Beginner",
+      "description": "Pull one dumbbell upward."
+    },
+    {
+      "name": "Goblet Squat",
+      "muscle": "Legs",
+      "difficulty": "Beginner",
+      "description": "Hold dumbbell at chest while squatting."
+    },
+    {
+      "name": "Walking Lunges",
+      "muscle": "Legs",
+      "difficulty": "Intermediate",
+      "description": "Walk forward holding dumbbells."
+    },
+    {
+      "name": "Romanian Deadlift",
+      "muscle": "Hamstrings",
+      "difficulty": "Intermediate",
+      "description": "Lower dumbbells with straight back."
+    },
+    {
+      "name": "Bulgarian Split Squat",
+      "muscle": "Legs",
+      "difficulty": "Advanced",
+      "description": "Rear foot elevated split squat."
+    },
+    {
+      "name": "Calf Raise",
+      "muscle": "Calves",
+      "difficulty": "Beginner",
+      "description": "Raise heels while holding dumbbells."
+    },
+    {
+      "name": "Shrugs",
+      "muscle": "Traps",
+      "difficulty": "Beginner",
+      "description": "Lift shoulders upward."
+    },
+    {
+      "name": "Tricep Kickback",
+      "muscle": "Triceps",
+      "difficulty": "Intermediate",
+      "description": "Extend arm backward."
+    },
+    {
+      "name": "Overhead Tricep Extension",
+      "muscle": "Triceps",
+      "difficulty": "Intermediate",
+      "description": "Extend dumbbell overhead."
     }
   ],
 
@@ -22,28 +130,58 @@
       "description": "Press weight upward while lying on bench."
     },
     {
-      "name": "Dumbbell Fly",
+      "name": "Incline Bench Press",
       "muscle": "Chest",
       "difficulty": "Intermediate",
-      "description": "Open arms wide and bring them together."
-    }
-  ],
-
-  "barbell": [
+      "description": "Press on incline bench."
+    },
     {
-      "name": "Deadlift",
-      "muscle": "Back",
+      "name": "Decline Bench Press",
+      "muscle": "Chest",
       "difficulty": "Advanced",
-      "description": "Lift barbell from ground."
-    }
-  ],
-
-  "weight plate": [
+      "description": "Press on decline bench."
+    },
     {
-      "name": "Plate Front Raise",
-      "muscle": "Shoulders",
+      "name": "Step Ups",
+      "muscle": "Legs",
       "difficulty": "Beginner",
-      "description": "Raise plate in front of body."
+      "description": "Step onto bench."
+    },
+    {
+      "name": "Bench Dips",
+      "muscle": "Triceps",
+      "difficulty": "Beginner",
+      "description": "Dip using bench support."
+    },
+    {
+      "name": "Hip Thrust",
+      "muscle": "Glutes",
+      "difficulty": "Intermediate",
+      "description": "Raise hips using bench."
+    },
+    {
+      "name": "Seated Shoulder Press",
+      "muscle": "Shoulders",
+      "difficulty": "Intermediate",
+      "description": "Press seated on bench."
+    },
+    {
+      "name": "Chest Fly",
+      "muscle": "Chest",
+      "difficulty": "Intermediate",
+      "description": "Perform fly movement on bench."
+    },
+    {
+      "name": "Bench Leg Raise",
+      "muscle": "Abs",
+      "difficulty": "Beginner",
+      "description": "Raise legs while lying on bench."
+    },
+    {
+      "name": "Reverse Crunch",
+      "muscle": "Abs",
+      "difficulty": "Beginner",
+      "description": "Crunch using bench support."
     }
   ],
 
@@ -53,6 +191,123 @@
       "muscle": "Back",
       "difficulty": "Intermediate",
       "description": "Pull cable toward torso."
+    },
+    {
+      "name": "Lat Pulldown",
+      "muscle": "Back",
+      "difficulty": "Beginner",
+      "description": "Pull bar downward."
+    },
+    {
+      "name": "Cable Chest Fly",
+      "muscle": "Chest",
+      "difficulty": "Intermediate",
+      "description": "Bring handles together."
+    },
+    {
+      "name": "Tricep Pushdown",
+      "muscle": "Triceps",
+      "difficulty": "Beginner",
+      "description": "Push cable downward."
+    },
+    {
+      "name": "Cable Curl",
+      "muscle": "Biceps",
+      "difficulty": "Beginner",
+      "description": "Curl cable upward."
+    },
+    {
+      "name": "Face Pull",
+      "muscle": "Shoulders",
+      "difficulty": "Intermediate",
+      "description": "Pull cable toward face."
+    },
+    {
+      "name": "Cable Lateral Raise",
+      "muscle": "Shoulders",
+      "difficulty": "Intermediate",
+      "description": "Raise cable sideways."
+    },
+    {
+      "name": "Straight Arm Pulldown",
+      "muscle": "Back",
+      "difficulty": "Intermediate",
+      "description": "Pull cable downward with straight arms."
+    },
+    {
+      "name": "Cable Woodchopper",
+      "muscle": "Core",
+      "difficulty": "Intermediate",
+      "description": "Rotate torso with cable."
+    },
+    {
+      "name": "Cable Crunch",
+      "muscle": "Abs",
+      "difficulty": "Intermediate",
+      "description": "Crunch downward using cable."
+    }
+  ],
+
+  "barbell": [
+    {
+      "name": "Deadlift",
+      "muscle": "Back",
+      "difficulty": "Advanced",
+      "description": "Lift barbell from floor."
+    },
+    {
+      "name": "Barbell Squat",
+      "muscle": "Legs",
+      "difficulty": "Intermediate",
+      "description": "Squat with barbell."
+    },
+    {
+      "name": "Bench Press",
+      "muscle": "Chest",
+      "difficulty": "Intermediate",
+      "description": "Press barbell upward."
+    },
+    {
+      "name": "Overhead Press",
+      "muscle": "Shoulders",
+      "difficulty": "Intermediate",
+      "description": "Press barbell overhead."
+    },
+    {
+      "name": "Barbell Row",
+      "muscle": "Back",
+      "difficulty": "Intermediate",
+      "description": "Row barbell toward stomach."
+    },
+    {
+      "name": "Romanian Deadlift",
+      "muscle": "Hamstrings",
+      "difficulty": "Intermediate",
+      "description": "Lower barbell slowly."
+    },
+    {
+      "name": "Front Squat",
+      "muscle": "Legs",
+      "difficulty": "Advanced",
+      "description": "Barbell placed on front shoulders."
+    },
+    {
+      "name": "Hip Thrust",
+      "muscle": "Glutes",
+      "difficulty": "Intermediate",
+      "description": "Lift hips with barbell."
+    },
+    {
+      "name": "Barbell Curl",
+      "muscle": "Biceps",
+      "difficulty": "Beginner",
+      "description": "Curl barbell upward."
+    },
+    {
+      "name": "Skull Crusher",
+      "muscle": "Triceps",
+      "difficulty": "Intermediate",
+      "description": "Lower barbell toward forehead."
     }
   ]
 }
