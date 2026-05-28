@@ -1,313 +1,293 @@
 {
   "dumbbell": [
     {
-      "name": "Bicep Curl",
-      "muscle": "Biceps",
-      "difficulty": "Beginner",
-      "description": "Lift dumbbells upward toward shoulders."
+      "name": "Bizeps Curl",
+      "muscle": "Bizeps",
+      "muscle_group": "Arme",
+      "difficulty": "Anfänger",
+      "equipment": "Kurzhantel",
+      "description": "Hebe die Kurzhanteln kontrolliert bis auf Schulterhöhe an."
     },
     {
       "name": "Hammer Curl",
-      "muscle": "Biceps",
-      "difficulty": "Beginner",
-      "description": "Curl dumbbells with neutral grip."
+      "muscle": "Bizeps",
+      "muscle_group": "Arme",
+      "difficulty": "Anfänger",
+      "equipment": "Kurzhantel",
+      "description": "Führe die Bewegung mit neutralem Griff aus."
     },
     {
-      "name": "Concentration Curl",
-      "muscle": "Biceps",
-      "difficulty": "Intermediate",
-      "description": "Curl seated with elbow against thigh."
+      "name": "Konzentrationscurl",
+      "muscle": "Bizeps",
+      "muscle_group": "Arme",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Kurzhantel",
+      "description": "Führe den Curl sitzend mit abgestütztem Arm aus."
     },
     {
-      "name": "Shoulder Press",
-      "muscle": "Shoulders",
-      "difficulty": "Intermediate",
-      "description": "Press dumbbells overhead."
+      "name": "Schulterdrücken",
+      "muscle": "Schulter",
+      "muscle_group": "Schultern",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Kurzhantel",
+      "description": "Drücke die Kurzhanteln kontrolliert über den Kopf."
     },
     {
       "name": "Arnold Press",
-      "muscle": "Shoulders",
-      "difficulty": "Intermediate",
-      "description": "Rotate dumbbells while pressing upward."
+      "muscle": "Schulter",
+      "muscle_group": "Schultern",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Kurzhantel",
+      "description": "Drehe die Kurzhanteln während der Bewegung nach außen."
     },
     {
-      "name": "Lateral Raise",
-      "muscle": "Shoulders",
-      "difficulty": "Beginner",
-      "description": "Raise dumbbells sideways."
+      "name": "Seitheben",
+      "muscle": "Seitliche Schulter",
+      "muscle_group": "Schultern",
+      "difficulty": "Anfänger",
+      "equipment": "Kurzhantel",
+      "description": "Hebe die Gewichte seitlich bis Schulterhöhe."
     },
     {
-      "name": "Front Raise",
-      "muscle": "Shoulders",
-      "difficulty": "Beginner",
-      "description": "Raise dumbbells in front of body."
+      "name": "Frontheben",
+      "muscle": "Vordere Schulter",
+      "muscle_group": "Schultern",
+      "difficulty": "Anfänger",
+      "equipment": "Kurzhantel",
+      "description": "Hebe die Hanteln kontrolliert nach vorne."
     },
     {
-      "name": "Dumbbell Bench Press",
-      "muscle": "Chest",
-      "difficulty": "Intermediate",
-      "description": "Press dumbbells upward while lying down."
+      "name": "Kurzhantel Bankdrücken",
+      "muscle": "Brust",
+      "muscle_group": "Brust",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Kurzhantel",
+      "description": "Drücke die Hanteln auf der Bank nach oben."
     },
     {
-      "name": "Incline Dumbbell Press",
-      "muscle": "Chest",
-      "difficulty": "Intermediate",
-      "description": "Press dumbbells on incline bench."
+      "name": "Schrägbankdrücken",
+      "muscle": "Obere Brust",
+      "muscle_group": "Brust",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Kurzhantel",
+      "description": "Drücke die Hanteln auf einer schrägen Bank."
     },
     {
-      "name": "Dumbbell Fly",
-      "muscle": "Chest",
-      "difficulty": "Intermediate",
-      "description": "Open arms wide and bring together."
+      "name": "Kurzhantel Flys",
+      "muscle": "Brust",
+      "muscle_group": "Brust",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Kurzhantel",
+      "description": "Führe eine weite Brustbewegung aus."
     },
     {
-      "name": "Bent Over Row",
-      "muscle": "Back",
-      "difficulty": "Intermediate",
-      "description": "Pull dumbbells toward torso."
+      "name": "Rudern vorgebeugt",
+      "muscle": "Rücken",
+      "muscle_group": "Rücken",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Kurzhantel",
+      "description": "Ziehe die Hanteln Richtung Oberkörper."
     },
     {
-      "name": "Single Arm Row",
-      "muscle": "Back",
-      "difficulty": "Beginner",
-      "description": "Pull one dumbbell upward."
+      "name": "Einarmiges Rudern",
+      "muscle": "Latissimus",
+      "muscle_group": "Rücken",
+      "difficulty": "Anfänger",
+      "equipment": "Kurzhantel",
+      "description": "Ziehe eine Hantel kontrolliert nach oben."
     },
     {
       "name": "Goblet Squat",
-      "muscle": "Legs",
-      "difficulty": "Beginner",
-      "description": "Hold dumbbell at chest while squatting."
+      "muscle": "Oberschenkel",
+      "muscle_group": "Beine",
+      "difficulty": "Anfänger",
+      "equipment": "Kurzhantel",
+      "description": "Halte die Hantel vor der Brust beim Kniebeugen."
     },
     {
       "name": "Walking Lunges",
-      "muscle": "Legs",
-      "difficulty": "Intermediate",
-      "description": "Walk forward holding dumbbells."
+      "muscle": "Oberschenkel",
+      "muscle_group": "Beine",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Kurzhantel",
+      "description": "Gehe Ausfallschritte mit Hanteln in der Hand."
     },
     {
-      "name": "Romanian Deadlift",
-      "muscle": "Hamstrings",
-      "difficulty": "Intermediate",
-      "description": "Lower dumbbells with straight back."
+      "name": "Rumänisches Kreuzheben",
+      "muscle": "Beinbeuger",
+      "muscle_group": "Beine",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Kurzhantel",
+      "description": "Senke die Gewichte kontrolliert nach unten."
     },
     {
       "name": "Bulgarian Split Squat",
-      "muscle": "Legs",
-      "difficulty": "Advanced",
-      "description": "Rear foot elevated split squat."
+      "muscle": "Quadrizeps",
+      "muscle_group": "Beine",
+      "difficulty": "Profi",
+      "equipment": "Kurzhantel",
+      "description": "Trainiere ein Bein mit erhöhtem hinteren Fuß."
     },
     {
-      "name": "Calf Raise",
-      "muscle": "Calves",
-      "difficulty": "Beginner",
-      "description": "Raise heels while holding dumbbells."
+      "name": "Wadenheben",
+      "muscle": "Waden",
+      "muscle_group": "Beine",
+      "difficulty": "Anfänger",
+      "equipment": "Kurzhantel",
+      "description": "Drücke dich auf die Zehenspitzen hoch."
     },
     {
       "name": "Shrugs",
-      "muscle": "Traps",
-      "difficulty": "Beginner",
-      "description": "Lift shoulders upward."
+      "muscle": "Nacken",
+      "muscle_group": "Rücken",
+      "difficulty": "Anfänger",
+      "equipment": "Kurzhantel",
+      "description": "Ziehe die Schultern kontrolliert nach oben."
     },
     {
-      "name": "Tricep Kickback",
-      "muscle": "Triceps",
-      "difficulty": "Intermediate",
-      "description": "Extend arm backward."
+      "name": "Trizeps Kickback",
+      "muscle": "Trizeps",
+      "muscle_group": "Arme",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Kurzhantel",
+      "description": "Strecke den Arm nach hinten aus."
     },
     {
-      "name": "Overhead Tricep Extension",
-      "muscle": "Triceps",
-      "difficulty": "Intermediate",
-      "description": "Extend dumbbell overhead."
+      "name": "Überkopf Trizepsstrecken",
+      "muscle": "Trizeps",
+      "muscle_group": "Arme",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Kurzhantel",
+      "description": "Strecke die Hantel über dem Kopf."
     }
   ],
 
   "bench": [
     {
-      "name": "Bench Press",
-      "muscle": "Chest",
-      "difficulty": "Intermediate",
-      "description": "Press weight upward while lying on bench."
+      "name": "Bankdrücken",
+      "muscle": "Brust",
+      "muscle_group": "Brust",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Bank",
+      "description": "Drücke das Gewicht kontrolliert nach oben."
     },
     {
-      "name": "Incline Bench Press",
-      "muscle": "Chest",
-      "difficulty": "Intermediate",
-      "description": "Press on incline bench."
+      "name": "Schrägbankdrücken",
+      "muscle": "Obere Brust",
+      "muscle_group": "Brust",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Bank",
+      "description": "Trainiert besonders die obere Brust."
     },
     {
-      "name": "Decline Bench Press",
-      "muscle": "Chest",
-      "difficulty": "Advanced",
-      "description": "Press on decline bench."
-    },
-    {
-      "name": "Step Ups",
-      "muscle": "Legs",
-      "difficulty": "Beginner",
-      "description": "Step onto bench."
-    },
-    {
-      "name": "Bench Dips",
-      "muscle": "Triceps",
-      "difficulty": "Beginner",
-      "description": "Dip using bench support."
+      "name": "Dips an der Bank",
+      "muscle": "Trizeps",
+      "muscle_group": "Arme",
+      "difficulty": "Anfänger",
+      "equipment": "Bank",
+      "description": "Senke den Körper kontrolliert ab."
     },
     {
       "name": "Hip Thrust",
-      "muscle": "Glutes",
-      "difficulty": "Intermediate",
-      "description": "Raise hips using bench."
+      "muscle": "Gesäß",
+      "muscle_group": "Beine",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Bank",
+      "description": "Drücke die Hüfte nach oben."
     },
     {
-      "name": "Seated Shoulder Press",
-      "muscle": "Shoulders",
-      "difficulty": "Intermediate",
-      "description": "Press seated on bench."
-    },
-    {
-      "name": "Chest Fly",
-      "muscle": "Chest",
-      "difficulty": "Intermediate",
-      "description": "Perform fly movement on bench."
-    },
-    {
-      "name": "Bench Leg Raise",
-      "muscle": "Abs",
-      "difficulty": "Beginner",
-      "description": "Raise legs while lying on bench."
-    },
-    {
-      "name": "Reverse Crunch",
-      "muscle": "Abs",
-      "difficulty": "Beginner",
-      "description": "Crunch using bench support."
+      "name": "Step Ups",
+      "muscle": "Oberschenkel",
+      "muscle_group": "Beine",
+      "difficulty": "Anfänger",
+      "equipment": "Bank",
+      "description": "Steige kontrolliert auf die Bank."
     }
   ],
 
   "cable machine": [
     {
-      "name": "Cable Row",
-      "muscle": "Back",
-      "difficulty": "Intermediate",
-      "description": "Pull cable toward torso."
+      "name": "Kabelrudern",
+      "muscle": "Rücken",
+      "muscle_group": "Rücken",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Kabelzug",
+      "description": "Ziehe den Griff Richtung Bauch."
     },
     {
-      "name": "Lat Pulldown",
-      "muscle": "Back",
-      "difficulty": "Beginner",
-      "description": "Pull bar downward."
+      "name": "Latziehen",
+      "muscle": "Latissimus",
+      "muscle_group": "Rücken",
+      "difficulty": "Anfänger",
+      "equipment": "Kabelzug",
+      "description": "Ziehe die Stange nach unten."
     },
     {
-      "name": "Cable Chest Fly",
-      "muscle": "Chest",
-      "difficulty": "Intermediate",
-      "description": "Bring handles together."
-    },
-    {
-      "name": "Tricep Pushdown",
-      "muscle": "Triceps",
-      "difficulty": "Beginner",
-      "description": "Push cable downward."
+      "name": "Trizeps Pushdown",
+      "muscle": "Trizeps",
+      "muscle_group": "Arme",
+      "difficulty": "Anfänger",
+      "equipment": "Kabelzug",
+      "description": "Drücke das Kabel nach unten."
     },
     {
       "name": "Cable Curl",
-      "muscle": "Biceps",
-      "difficulty": "Beginner",
-      "description": "Curl cable upward."
+      "muscle": "Bizeps",
+      "muscle_group": "Arme",
+      "difficulty": "Anfänger",
+      "equipment": "Kabelzug",
+      "description": "Ziehe das Kabel nach oben."
     },
     {
       "name": "Face Pull",
-      "muscle": "Shoulders",
-      "difficulty": "Intermediate",
-      "description": "Pull cable toward face."
-    },
-    {
-      "name": "Cable Lateral Raise",
-      "muscle": "Shoulders",
-      "difficulty": "Intermediate",
-      "description": "Raise cable sideways."
-    },
-    {
-      "name": "Straight Arm Pulldown",
-      "muscle": "Back",
-      "difficulty": "Intermediate",
-      "description": "Pull cable downward with straight arms."
-    },
-    {
-      "name": "Cable Woodchopper",
-      "muscle": "Core",
-      "difficulty": "Intermediate",
-      "description": "Rotate torso with cable."
-    },
-    {
-      "name": "Cable Crunch",
-      "muscle": "Abs",
-      "difficulty": "Intermediate",
-      "description": "Crunch downward using cable."
+      "muscle": "Hintere Schulter",
+      "muscle_group": "Schultern",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Kabelzug",
+      "description": "Ziehe das Kabel Richtung Gesicht."
     }
   ],
 
   "barbell": [
     {
-      "name": "Deadlift",
-      "muscle": "Back",
-      "difficulty": "Advanced",
-      "description": "Lift barbell from floor."
+      "name": "Kreuzheben",
+      "muscle": "Rücken",
+      "muscle_group": "Rücken",
+      "difficulty": "Profi",
+      "equipment": "Langhantel",
+      "description": "Hebe die Langhantel vom Boden an."
     },
     {
-      "name": "Barbell Squat",
-      "muscle": "Legs",
-      "difficulty": "Intermediate",
-      "description": "Squat with barbell."
+      "name": "Kniebeugen",
+      "muscle": "Oberschenkel",
+      "muscle_group": "Beine",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Langhantel",
+      "description": "Führe tiefe Kniebeugen aus."
     },
     {
-      "name": "Bench Press",
-      "muscle": "Chest",
-      "difficulty": "Intermediate",
-      "description": "Press barbell upward."
+      "name": "Schulterdrücken",
+      "muscle": "Schulter",
+      "muscle_group": "Schultern",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Langhantel",
+      "description": "Drücke die Langhantel über den Kopf."
     },
     {
-      "name": "Overhead Press",
-      "muscle": "Shoulders",
-      "difficulty": "Intermediate",
-      "description": "Press barbell overhead."
+      "name": "Langhantelrudern",
+      "muscle": "Rücken",
+      "muscle_group": "Rücken",
+      "difficulty": "Fortgeschritten",
+      "equipment": "Langhantel",
+      "description": "Ziehe die Hantel zum Bauch."
     },
     {
-      "name": "Barbell Row",
-      "muscle": "Back",
-      "difficulty": "Intermediate",
-      "description": "Row barbell toward stomach."
-    },
-    {
-      "name": "Romanian Deadlift",
-      "muscle": "Hamstrings",
-      "difficulty": "Intermediate",
-      "description": "Lower barbell slowly."
-    },
-    {
-      "name": "Front Squat",
-      "muscle": "Legs",
-      "difficulty": "Advanced",
-      "description": "Barbell placed on front shoulders."
-    },
-    {
-      "name": "Hip Thrust",
-      "muscle": "Glutes",
-      "difficulty": "Intermediate",
-      "description": "Lift hips with barbell."
-    },
-    {
-      "name": "Barbell Curl",
-      "muscle": "Biceps",
-      "difficulty": "Beginner",
-      "description": "Curl barbell upward."
-    },
-    {
-      "name": "Skull Crusher",
-      "muscle": "Triceps",
-      "difficulty": "Intermediate",
-      "description": "Lower barbell toward forehead."
+      "name": "Langhantel Curl",
+      "muscle": "Bizeps",
+      "muscle_group": "Arme",
+      "difficulty": "Anfänger",
+      "equipment": "Langhantel",
+      "description": "Führe kontrollierte Bizeps-Curls aus."
     }
   ]
 }
