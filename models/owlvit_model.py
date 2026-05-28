@@ -20,7 +20,8 @@ equipment_queries = [
     "weight plate",
     "cable machine",
     "kettlebell",
-    "smith machine"
+    "smith machine",
+    "pull up bar"
 ]
 
 
@@ -32,13 +33,15 @@ def detect_objects(image):
         return_tensors="pt"
     ).to(device)
 
-    outputs = model(**inputs)
+    with torch.no_grad():
+        outputs = model(**inputs)
 
-    target_sizes = torch.Tensor(
+    target_sizes = torch.tensor(
         [image.size[::-1]]
-    )
+    ).to(device)
 
-    results = processor.post_process_object_detection(
+    # WICHTIG: neue API
+    results = processor.post_process_grounded_object_detection(
         outputs=outputs,
         target_sizes=target_sizes,
         threshold=0.15
@@ -46,13 +49,18 @@ def detect_objects(image):
 
     detected = []
 
-    for box, score, label in zip(
-        results[0]["boxes"],
-        results[0]["scores"],
-        results[0]["labels"]
+    boxes = results[0]["boxes"]
+    scores = results[0]["scores"]
+    labels = results[0]["labels"]
+
+    for score, label in zip(
+        scores,
+        labels
     ):
 
-        item = equipment_queries[label]
+        item = equipment_queries[
+            label.item()
+        ]
 
         if item not in detected:
             detected.append(item)
