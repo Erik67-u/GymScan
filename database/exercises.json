@@ -1,1 +1,58 @@
+{
+  "dumbbell": [
+    {
+      "name": "Bicep Curl",
+      "muscle": "Biceps",
+      "difficulty": "Beginner",
+      "description": "Lift dumbbells upward toward shoulders."
+    },
+    {
+      "name": "Shoulder Press",
+      "muscle": "Shoulders",
+      "difficulty": "Intermediate",
+      "description": "Press dumbbells overhead."
+    }
+  ],
 
+  "bench": [
+    {
+      "name": "Bench Press",
+      "muscle": "Chest",
+      "difficulty": "Intermediate",
+      "description": "Press weight upward while lying on bench."
+    },
+    {
+      "name": "Dumbbell Fly",
+      "muscle": "Chest",
+      "difficulty": "Intermediate",
+      "description": "Open arms wide and bring them together."
+    }
+  ],
+
+  "barbell": [
+    {
+      "name": "Deadlift",
+      "muscle": "Back",
+      "difficulty": "Advanced",
+      "description": "Lift barbell from ground."
+    }
+  ],
+
+  "weight plate": [
+    {
+      "name": "Plate Front Raise",
+      "muscle": "Shoulders",
+      "difficulty": "Beginner",
+      "description": "Raise plate in front of body."
+    }
+  ],
+
+  "cable machine": [
+    {
+      "name": "Cable Row",
+      "muscle": "Back",
+      "difficulty": "Intermediate",
+      "description": "Pull cable toward torso."
+    }
+  ]
+}
