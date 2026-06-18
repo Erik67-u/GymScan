@@ -1,13 +1,8 @@
 import streamlit as st
 from PIL import Image
 
-from services.detector import (
-    detect_equipment
-)
-
-from services.recommender import (
-    recommend_exercises
-)
+from services.detector import detect_equipment
+from services.recommender import recommend_exercises
 
 # ---------------------------------------------------
 # PAGE CONFIG
@@ -20,152 +15,312 @@ st.set_page_config(
 )
 
 # ---------------------------------------------------
-# CUSTOM CSS DESIGN
+# GLOBAL CSS
 # ---------------------------------------------------
 
 st.markdown("""
 <style>
 
-/* Hintergrund Gradient */
+/* STREAMLIT ENTFERNEN */
+
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header {
+    visibility: hidden;
+}
+
+[data-testid="stToolbar"] {
+    display: none;
+}
+
+[data-testid="collapsedControl"] {
+    display: none;
+}
+
+/* APP HINTERGRUND */
+
 .stApp {
-    background:
-    linear-gradient(
-        135deg,
-        #F8FBFF 0%,
-        #EAF4FF 35%,
-        #D7F4F5 70%,
-        #EEF0FF 100%
-    );
+
+background:
+linear-gradient(
+180deg,
+#070B1A 0%,
+#0B1022 45%,
+#0E1430 100%
+);
+
 }
 
-/* Haupttitel */
-.main-title {
-    font-size: 4rem;
-    font-weight: 800;
-    color: #1565C0;
-    text-align: center;
-    margin-bottom: 0;
+/* CONTENT WIDTH */
+
+.block-container {
+    max-width: 1350px;
+    padding-top: 1rem;
 }
 
-/* Subtitle */
-.subtitle {
-    text-align: center;
-    color: #0284C7;
-    font-size: 1.3rem;
-    margin-top: 0;
-    margin-bottom: 2rem;
+/* HERO */
+
+.hero-card {
+
+background:
+linear-gradient(
+135deg,
+#162447,
+#1F4068,
+#2B5876
+);
+
+padding: 35px;
+
+border-radius: 30px;
+
+box-shadow:
+0px 0px 30px rgba(
+77,
+166,
+255,
+0.25
+);
+
+margin-bottom: 30px;
+
 }
 
-/* Hero Box */
-.hero-box {
-    background:
-    linear-gradient(
-        135deg,
-        rgba(31,182,255,0.15),
-        rgba(0,194,184,0.12),
-        rgba(139,92,246,0.10)
-    );
+.hero-title {
 
-    padding: 2rem;
-    border-radius: 24px;
-    border: 1px solid rgba(255,255,255,0.4);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-    margin-bottom: 2rem;
+color: white;
+
+font-size: 52px;
+
+font-weight: 800;
+
+margin-bottom: 10px;
+
 }
 
-/* Card Design */
+.hero-subtitle {
+
+color: #A5D8FF;
+
+font-size: 20px;
+
+}
+
+/* SECTION TITLES */
+
+.section-title {
+
+color: white;
+
+font-size: 30px;
+
+font-weight: 700;
+
+margin-top: 25px;
+
+margin-bottom: 20px;
+
+}
+
+/* EQUIPMENT CARD */
+
+.equipment-card {
+
+background: #111827;
+
+padding: 20px;
+
+border-radius: 18px;
+
+margin-bottom: 15px;
+
+border: 1px solid #1E3A8A;
+
+color: white;
+
+font-weight: 700;
+
+text-align: center;
+
+}
+
+/* EXERCISE CARD */
+
 .exercise-card {
-    background: rgba(255,255,255,0.75);
-    backdrop-filter: blur(12px);
-    border-radius: 22px;
-    padding: 25px;
-    margin-bottom: 20px;
-    box-shadow:
-        0 10px 30px rgba(0,0,0,0.08);
-    border: 1px solid rgba(255,255,255,0.4);
+
+background: #111827;
+
+padding: 25px;
+
+border-radius: 24px;
+
+margin-bottom: 20px;
+
+border: 1px solid rgba(
+77,
+166,
+255,
+0.25
+);
+
+box-shadow:
+0px 0px 25px rgba(
+77,
+166,
+255,
+0.08
+);
+
 }
 
-/* Exercise Title */
+/* EXERCISE TITLE */
+
 .exercise-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #1565C0;
-    margin-bottom: 12px;
+
+font-size: 24px;
+
+font-weight: 700;
+
+color: white;
+
+margin-bottom: 15px;
+
 }
 
-/* Text */
+/* TEXT */
+
 .exercise-text {
-    color: #334155;
-    font-size: 1rem;
+
+color: #D1D5DB;
+
+line-height: 1.8;
+
 }
 
-/* Buttons */
+/* MUSCLE CHIP */
+
+.muscle-chip {
+
+background: #1E3A8A;
+
+padding: 8px 16px;
+
+border-radius: 999px;
+
+color: white;
+
+font-size: 14px;
+
+display: inline-block;
+
+margin-bottom: 12px;
+
+}
+
+/* BUTTON */
+
 div.stButton > button {
-    width: 100%;
-    background:
-    linear-gradient(
-        90deg,
-        #1FB6FF,
-        #00C2B8,
-        #8B5CF6
-    );
 
-    color: white;
-    border: none;
-    border-radius: 16px;
-    padding: 16px;
-    font-size: 18px;
-    font-weight: bold;
-    transition: all 0.3s ease;
+background:
+linear-gradient(
+90deg,
+#3B82F6,
+#06B6D4
+);
+
+color: white;
+
+font-size: 18px;
+
+font-weight: 700;
+
+height: 60px;
+
+border-radius: 18px;
+
+border: none;
+
+width: 100%;
+
 }
 
-div.stButton > button:hover {
-    transform: scale(1.02);
-    box-shadow:
-        0 10px 20px rgba(0,0,0,0.15);
-}
+/* FILE UPLOADER */
 
-/* Upload Box */
 [data-testid="stFileUploader"] {
-    background: rgba(255,255,255,0.65);
-    border-radius: 18px;
-    padding: 20px;
-    border: 1px solid rgba(255,255,255,0.5);
+
+background: #111827;
+
+padding: 20px;
+
+border-radius: 18px;
+
+border: 1px solid #1E3A8A;
+
+}
+
+/* SUCCESS BOX */
+
+[data-testid="stSuccess"] {
+
+background-color: #102A43;
+
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+width: 8px;
+}
+
+::-webkit-scrollbar-track {
+background: #070B1A;
+}
+
+::-webkit-scrollbar-thumb {
+background: #1E3A8A;
+border-radius: 10px;
 }
 
 </style>
 """, unsafe_allow_html=True)
 
 # ---------------------------------------------------
-# HERO SECTION
+# HERO
 # ---------------------------------------------------
 
 st.markdown("""
-<div class="hero-box">
+<div class="hero-card">
 
-<h1 class="main-title">
+<div class="hero-title">
 🏋️ GymScan
-</h1>
+</div>
 
-<p class="subtitle">
-Train smarter.<br>
-Scanne dein Equipment und entdecke passende Übungen.
-</p>
+<div class="hero-subtitle">
+KI-gestützte Equipment-Erkennung für dein Training.
+<br>
+Scanne dein Equipment und erhalte passende Übungen in Sekunden.
+</div>
 
 </div>
 """, unsafe_allow_html=True)
 
 # ---------------------------------------------------
-# IMAGE UPLOAD
+# UPLOAD
 # ---------------------------------------------------
 
 uploaded_file = st.file_uploader(
-    "📸 Lade ein Bild deines Gym-Equipments hoch",
+    "📸 Lade ein Bild hoch",
     type=["jpg", "jpeg", "png"]
 )
 
 # ---------------------------------------------------
-# IMAGE PROCESSING
+# PROCESS IMAGE
 # ---------------------------------------------------
 
 if uploaded_file:
@@ -176,7 +331,6 @@ if uploaded_file:
 
     st.image(
         image,
-        caption="Dein hochgeladenes Bild",
         use_container_width=True
     )
 
@@ -185,69 +339,66 @@ if uploaded_file:
     ):
 
         with st.spinner(
-            "GymScan analysiert dein Equipment..."
+            "GymScan analysiert dein Bild..."
         ):
 
             equipment = detect_equipment(
                 image
             )
 
-            exercises = (
-                recommend_exercises(
-                    equipment
-                )
+            exercises = recommend_exercises(
+                equipment
             )
 
         st.success(
-            "✅ Scan erfolgreich!"
+            "Scan abgeschlossen"
         )
 
-        # ---------------------------------------------------
-        # DETECTED EQUIPMENT
-        # ---------------------------------------------------
+        # -----------------------------------------
+        # EQUIPMENT
+        # -----------------------------------------
 
-        st.markdown("## 🏋️ Erkanntes Equipment")
+        st.markdown(
+            '<div class="section-title">🏋️ Erkanntes Equipment</div>',
+            unsafe_allow_html=True
+        )
 
         if equipment:
 
-            cols = st.columns(
-                min(
-                    len(equipment),
-                    4
-                )
-            )
+            for item in equipment:
 
-            for i, item in enumerate(
-                equipment
-            ):
-                cols[
-                    i % len(cols)
-                ].success(
-                    item.title()
+                st.markdown(
+                    f'''
+                    <div class="equipment-card">
+                    {item.title()}
+                    </div>
+                    ''',
+                    unsafe_allow_html=True
                 )
 
         else:
+
             st.warning(
                 "Kein Equipment erkannt."
             )
 
-        st.markdown("---")
-
-        # ---------------------------------------------------
+        # -----------------------------------------
         # EXERCISES
-        # ---------------------------------------------------
+        # -----------------------------------------
 
         st.markdown(
-            "## 💪 Empfohlene Übungen"
+            '<div class="section-title">💪 Empfohlene Übungen</div>',
+            unsafe_allow_html=True
         )
 
         if exercises:
 
             for ex in exercises:
 
-                difficulty = ex[
-                    "difficulty"
-                ]
+                difficulty = ex.get(
+                    "difficulty",
+                    "Anfänger"
+                )
 
                 if difficulty == "Anfänger":
                     badge = "🟢"
@@ -258,42 +409,44 @@ if uploaded_file:
                 else:
                     badge = "🟣"
 
-                st.markdown(f"""
-                <div class="exercise-card">
+                st.markdown(
+                    f"""
+                    <div class="exercise-card">
 
-                <div class="exercise-title">
-                {ex["name"]}
-                </div>
+                    <div class="exercise-title">
+                    {ex["name"]}
+                    </div>
 
-                <div class="exercise-text">
+                    <span class="muscle-chip">
+                    {ex["muscle_group"]}
+                    </span>
 
-                <strong>🎯 Muskel:</strong>
-                {ex["muscle"]}
+                    <div class="exercise-text">
 
-                <br><br>
+                    🎯 <b>Muskel:</b>
+                    {ex["muscle"]}
 
-                <strong>🏋️ Muskelgruppe:</strong>
-                {ex["muscle_group"]}
+                    <br><br>
 
-                <br><br>
+                    ⚡ <b>Schwierigkeit:</b>
+                    {badge} {difficulty}
 
-                <strong>⚡ Schwierigkeit:</strong>
-                {badge}
-                {difficulty}
+                    <br><br>
 
-                <br><br>
+                    🏋️ <b>Equipment:</b>
+                    {ex["equipment"]}
 
-                <strong>🛠 Equipment:</strong>
-                {ex["equipment"]}
+                    <br><br>
 
-                <br><br>
+                    📖 <b>Beschreibung:</b><br>
+                    {ex["description"]}
 
-                <strong>📖 Beschreibung:</strong><br>
-                {ex["description"]}
+                    </div>
 
-                </div>
-                </div>
-                """, unsafe_allow_html=True)
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )
 
         else:
 
