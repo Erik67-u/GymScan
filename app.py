@@ -15,314 +15,314 @@ st.set_page_config(
 )
 
 # ---------------------------------------------------
-# GLOBAL CSS
+# CSS
 # ---------------------------------------------------
 
 st.markdown("""
 <style>
 
-/* EXO 2 FONT */
+/* =====================================================
+   FONT
+===================================================== */
+
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&display=swap');
 
-/* GESAMTE APP SCHRIFT */
-html, body, [class*="css"], p, div, span, label, input, textarea, button {
-
+html,
+body,
+[data-testid="stAppViewContainer"] * {
     font-family: 'Exo 2', sans-serif !important;
-
 }
 
-/* STREAMLIT ENTFERNEN */
+/* =====================================================
+   STREAMLIT AUSBLENDEN
+===================================================== */
 
-#MainMenu {
-    visibility: hidden;
-}
-
-footer {
-    visibility: hidden;
-}
-
-header {
-    visibility: hidden;
-}
+#MainMenu {visibility:hidden;}
+footer {visibility:hidden;}
+header {visibility:hidden;}
 
 [data-testid="stToolbar"] {
-    display: none;
+    display:none;
 }
 
 [data-testid="collapsedControl"] {
-    display: none;
+    display:none;
 }
 
-/* APP HINTERGRUND */
+/* =====================================================
+   HINTERGRUND
+===================================================== */
 
 .stApp {
-
-background:
-linear-gradient(
-180deg,
-#070B1A 0%,
-#0B1022 45%,
-#0E1430 100%
-);
-
+    background:
+    linear-gradient(
+        180deg,
+        #070B1A 0%,
+        #0B1022 45%,
+        #0E1430 100%
+    );
 }
 
-/* CONTENT WIDTH */
+/* =====================================================
+   LAYOUT
+===================================================== */
 
 .block-container {
-    max-width: 1350px;
-    padding-top: 1rem;
+    max-width:1300px;
+    padding-top:1rem;
 }
 
-/* HERO */
+/* =====================================================
+   HERO
+===================================================== */
 
 .hero-card {
 
-background:
-linear-gradient(
-135deg,
-#162447,
-#1F4068,
-#2B5876
-);
+    background:
+    linear-gradient(
+        135deg,
+        #162447,
+        #1F4068,
+        #2B5876
+    );
 
-padding: 35px;
+    padding:40px;
+    border-radius:30px;
 
-border-radius: 30px;
+    box-shadow:
+    0px 0px 30px rgba(
+        77,
+        166,
+        255,
+        0.20
+    );
 
-box-shadow:
-0px 0px 30px rgba(
-77,
-166,
-255,
-0.25
-);
-
-margin-bottom: 30px;
-
+    margin-bottom:30px;
 }
 
 .hero-title {
 
-font-family: 'Exo 2', sans-serif;
-
-color: white;
-
-font-size: 58px;
-
-font-weight: 800;
-
-letter-spacing: 2px;
-
-text-transform: uppercase;
-
-margin-bottom: 10px;
+    color:white;
+    font-size:58px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:2px;
 
 }
 
 .hero-subtitle {
 
-color: #A5D8FF;
-
-font-size: 20px;
+    color:#A5D8FF;
+    font-size:20px;
+    margin-top:10px;
 
 }
 
-/* SECTION TITLES */
+/* =====================================================
+   TITEL
+===================================================== */
 
 .section-title {
 
-color: white;
-
-font-size: 30px;
-
-font-weight: 700;
-
-margin-top: 25px;
-
-margin-bottom: 20px;
+    color:white;
+    font-size:30px;
+    font-weight:700;
+    margin-top:20px;
+    margin-bottom:20px;
 
 }
 
-/* EQUIPMENT CARD */
+/* =====================================================
+   EQUIPMENT CARD
+===================================================== */
 
 .equipment-card {
 
-background: #111827;
+    background:#111827;
 
-padding: 20px;
+    padding:20px;
 
-border-radius: 18px;
+    border-radius:18px;
 
-margin-bottom: 15px;
+    margin-bottom:15px;
 
-border: 1px solid #1E3A8A;
+    border:1px solid #1E3A8A;
 
-color: white;
+    color:white;
 
-font-weight: 700;
+    text-align:center;
 
-text-align: center;
+    font-size:18px;
+
+    font-weight:700;
 
 }
 
-/* EXERCISE CARD */
+/* =====================================================
+   EXERCISE CARD
+===================================================== */
 
 .exercise-card {
 
-background: #111827;
+    background:#111827;
 
-padding: 25px;
+    padding:25px;
 
-border-radius: 24px;
+    border-radius:25px;
 
-margin-bottom: 20px;
+    margin-bottom:20px;
 
-border: 1px solid rgba(
-77,
-166,
-255,
-0.25
-);
+    border:1px solid rgba(
+        77,
+        166,
+        255,
+        0.20
+    );
 
-box-shadow:
-0px 0px 25px rgba(
-77,
-166,
-255,
-0.08
-);
+    box-shadow:
+    0px 0px 20px rgba(
+        77,
+        166,
+        255,
+        0.08
+    );
 
 }
-
-/* EXERCISE TITLE */
 
 .exercise-title {
 
-font-family: 'Exo 2', sans-serif;
+    color:white;
 
-font-size: 26px;
+    font-size:26px;
 
-font-weight: 700;
+    font-weight:700;
 
-color: white;
-
-letter-spacing: 1px;
-
-margin-bottom: 15px;
+    margin-bottom:15px;
 
 }
-
-/* TEXT */
 
 .exercise-text {
 
-color: #D1D5DB;
+    color:#D1D5DB;
 
-line-height: 1.8;
-
-font-size: 16px;
+    line-height:1.8;
 
 }
 
-/* MUSCLE CHIP */
+/* =====================================================
+   MUSCLE CHIP
+===================================================== */
 
 .muscle-chip {
 
-background: #1E3A8A;
+    background:#1E3A8A;
 
-padding: 8px 16px;
+    padding:8px 16px;
 
-border-radius: 999px;
+    border-radius:999px;
 
-color: white;
+    color:white;
 
-font-size: 14px;
+    font-size:14px;
 
-display: inline-block;
+    display:inline-block;
 
-margin-bottom: 12px;
+    margin-bottom:15px;
 
 }
 
-/* BUTTON */
+/* =====================================================
+   BUTTON
+===================================================== */
 
 div.stButton > button {
 
-background:
-linear-gradient(
-90deg,
-#3B82F6,
-#06B6D4
-);
+    background:
+    linear-gradient(
+        90deg,
+        #3B82F6,
+        #06B6D4
+    );
 
-color: white;
+    color:white;
 
-font-size: 18px;
+    border:none;
 
-font-weight: 700;
+    border-radius:18px;
 
-height: 60px;
+    height:60px;
 
-border-radius: 18px;
+    width:100%;
 
-border: none;
+    font-size:18px;
 
-width: 100%;
+    font-weight:700;
 
-transition: 0.3s;
+    transition:0.3s;
 
 }
 
 div.stButton > button:hover {
 
-transform: scale(1.02);
+    transform:scale(1.02);
 
-box-shadow:
-0px 0px 20px rgba(
-59,
-130,
-246,
-0.4
-);
+    box-shadow:
+    0px 0px 25px rgba(
+        59,
+        130,
+        246,
+        0.4
+    );
 
 }
 
-/* FILE UPLOADER */
+/* =====================================================
+   FILE UPLOADER
+===================================================== */
 
 [data-testid="stFileUploader"] {
 
-background: #111827;
+    background:#111827;
 
-padding: 20px;
+    border:1px solid #1E3A8A;
 
-border-radius: 18px;
+    border-radius:20px;
 
-border: 1px solid #1E3A8A;
+    padding:20px;
 
 }
 
-/* SUCCESS BOX */
+/* Verhindert doppelte Upload-Anzeige */
+
+[data-testid="stFileUploader"] section button p {
+    display:none;
+}
+
+/* =====================================================
+   SUCCESS
+===================================================== */
 
 [data-testid="stSuccess"] {
 
-background-color: #102A43;
+    background:#102A43;
 
 }
 
-/* SCROLLBAR */
+/* =====================================================
+   SCROLLBAR
+===================================================== */
 
 ::-webkit-scrollbar {
-width: 8px;
+    width:8px;
 }
 
 ::-webkit-scrollbar-track {
-background: #070B1A;
+    background:#070B1A;
 }
 
 ::-webkit-scrollbar-thumb {
-background: #1E3A8A;
-border-radius: 10px;
+    background:#1E3A8A;
+    border-radius:10px;
 }
 
 </style>
@@ -340,8 +340,7 @@ st.markdown("""
 </div>
 
 <div class="hero-subtitle">
-KI-gestützte Equipment-Erkennung für dein Training.
-<br>
+KI-gestützte Equipment-Erkennung für dein Training.<br>
 Scanne dein Equipment und erhalte passende Übungen in Sekunden.
 </div>
 
@@ -363,36 +362,26 @@ uploaded_file = st.file_uploader(
 
 if uploaded_file:
 
-    image = Image.open(
-        uploaded_file
-    ).convert("RGB")
+    image = Image.open(uploaded_file).convert("RGB")
 
     st.image(
         image,
         use_container_width=True
     )
 
-    if st.button(
-        "🔍 Equipment scannen"
-    ):
+    if st.button("🔍 Equipment scannen"):
 
-        with st.spinner(
-            "GymScan analysiert dein Bild..."
-        ):
+        with st.spinner("GymScan analysiert dein Bild..."):
 
-            equipment = detect_equipment(
-                image
-            )
+            equipment = detect_equipment(image)
 
             exercises = recommend_exercises(
                 equipment
             )
 
-        st.success(
-            "Scan abgeschlossen"
-        )
+        st.success("✅ Scan abgeschlossen")
 
-        # EQUIPMENT
+        # Equipment
 
         st.markdown(
             '<div class="section-title">🏋️ Erkanntes Equipment</div>',
@@ -403,14 +392,11 @@ if uploaded_file:
 
             for item in equipment:
 
-                st.markdown(
-                    f'''
-                    <div class="equipment-card">
-                    {item.title()}
-                    </div>
-                    ''',
-                    unsafe_allow_html=True
-                )
+                st.markdown(f"""
+                <div class="equipment-card">
+                {item.title()}
+                </div>
+                """, unsafe_allow_html=True)
 
         else:
 
@@ -418,7 +404,7 @@ if uploaded_file:
                 "Kein Equipment erkannt."
             )
 
-        # EXERCISES
+        # Übungen
 
         st.markdown(
             '<div class="section-title">💪 Empfohlene Übungen</div>',
@@ -436,51 +422,45 @@ if uploaded_file:
 
                 if difficulty == "Anfänger":
                     badge = "🟢"
-
                 elif difficulty == "Fortgeschritten":
                     badge = "🔵"
-
                 else:
                     badge = "🟣"
 
-                st.markdown(
-                    f"""
-                    <div class="exercise-card">
+                st.markdown(f"""
+                <div class="exercise-card">
 
-                    <div class="exercise-title">
-                    {ex["name"]}
-                    </div>
+                <div class="exercise-title">
+                {ex["name"]}
+                </div>
 
-                    <span class="muscle-chip">
-                    {ex["muscle_group"]}
-                    </span>
+                <span class="muscle-chip">
+                {ex["muscle_group"]}
+                </span>
 
-                    <div class="exercise-text">
+                <div class="exercise-text">
 
-                    🎯 <b>Muskel:</b>
-                    {ex["muscle"]}
+                🎯 <b>Muskel:</b> {ex["muscle"]}
 
-                    <br><br>
+                <br><br>
 
-                    ⚡ <b>Schwierigkeit:</b>
-                    {badge} {difficulty}
+                ⚡ <b>Schwierigkeit:</b>
+                {badge} {difficulty}
 
-                    <br><br>
+                <br><br>
 
-                    🏋️ <b>Equipment:</b>
-                    {ex["equipment"]}
+                🏋️ <b>Equipment:</b>
+                {ex["equipment"]}
 
-                    <br><br>
+                <br><br>
 
-                    📖 <b>Beschreibung:</b><br>
-                    {ex["description"]}
+                📖 <b>Beschreibung:</b><br>
+                {ex["description"]}
 
-                    </div>
+                </div>
 
-                    </div>
-                    """,
-                    unsafe_allow_html=True
-                )
+                </div>
+                """, unsafe_allow_html=True)
 
         else:
 
