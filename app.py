@@ -21,6 +21,16 @@ st.set_page_config(
 st.markdown("""
 <style>
 
+/* EXO 2 FONT */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&display=swap');
+
+/* GESAMTE APP SCHRIFT */
+html, body, [class*="css"], p, div, span, label, input, textarea, button {
+
+    font-family: 'Exo 2', sans-serif !important;
+
+}
+
 /* STREAMLIT ENTFERNEN */
 
 #MainMenu {
@@ -94,11 +104,17 @@ margin-bottom: 30px;
 
 .hero-title {
 
+font-family: 'Exo 2', sans-serif;
+
 color: white;
 
-font-size: 52px;
+font-size: 58px;
 
 font-weight: 800;
+
+letter-spacing: 2px;
+
+text-transform: uppercase;
 
 margin-bottom: 10px;
 
@@ -183,11 +199,15 @@ box-shadow:
 
 .exercise-title {
 
-font-size: 24px;
+font-family: 'Exo 2', sans-serif;
+
+font-size: 26px;
 
 font-weight: 700;
 
 color: white;
+
+letter-spacing: 1px;
 
 margin-bottom: 15px;
 
@@ -200,6 +220,8 @@ margin-bottom: 15px;
 color: #D1D5DB;
 
 line-height: 1.8;
+
+font-size: 16px;
 
 }
 
@@ -247,6 +269,22 @@ border-radius: 18px;
 border: none;
 
 width: 100%;
+
+transition: 0.3s;
+
+}
+
+div.stButton > button:hover {
+
+transform: scale(1.02);
+
+box-shadow:
+0px 0px 20px rgba(
+59,
+130,
+246,
+0.4
+);
 
 }
 
@@ -354,9 +392,7 @@ if uploaded_file:
             "Scan abgeschlossen"
         )
 
-        # -----------------------------------------
         # EQUIPMENT
-        # -----------------------------------------
 
         st.markdown(
             '<div class="section-title">🏋️ Erkanntes Equipment</div>',
@@ -382,9 +418,7 @@ if uploaded_file:
                 "Kein Equipment erkannt."
             )
 
-        # -----------------------------------------
         # EXERCISES
-        # -----------------------------------------
 
         st.markdown(
             '<div class="section-title">💪 Empfohlene Übungen</div>',
